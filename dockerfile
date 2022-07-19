@@ -15,5 +15,3 @@ RUN apt-get install openssh-server -y
 RUN echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 VOLUME /opt/apache-tomcat-8.5.81/webapps
 ENV PATH=$PATH:/opt/apache-tomcat-8.5.81/bin
-CMD startup.sh && service ssh start && /bin/bash
-
